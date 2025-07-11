@@ -74,7 +74,8 @@ input {
 }
 
 .form input[type="text"],
-.form input[type="password"] {
+.form input[type="password"],
+.form input[type="email"] {
     border-radius: 0.5rem;
     padding: 0.8rem 0.75rem;
     width: 100%;
