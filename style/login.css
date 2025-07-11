@@ -1,0 +1,128 @@
+@font-face {
+    font-family: "Vazir";
+    src: url("../src/fonts/Vazir.ttf") format("truetype");
+}
+
+:root {
+    --primary: #ff0000;
+    --bg-dark: #141414;
+    --text-muted: #85888f;
+    --text-light: #ffffff;
+    --font-vn: "Vazir"
+}
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-vn);
+}
+
+#nokey {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+input {
+    font-family: inherit;
+}
+
+.con-d {
+    min-width: 340px;
+    text-align: center;
+}
+
+.form h1 {
+    margin: 0;
+}
+
+.form {
+    --bg-light: #efefef;
+    --bg-dark: #707070;
+    --clr: #58bc82;
+    --clr-alpha: #9c9c9c60;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 340px;
+    padding: 20px;
+    border: solid 1px #ff0000;
+    border-radius: 20px;
+}
+
+.form .input-span {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form input[type="text"],
+.form input[type="password"] {
+    border-radius: 0.5rem;
+    padding: 0.8rem 0.75rem;
+    width: 100%;
+    border: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: var(--clr-alpha);
+    outline: 2px solid var(--bg-dark);
+}
+
+.form input[type="text"]:focus,
+.form input[type="password"]:focus {
+    outline: 2px solid var(--primary);
+}
+
+.label {
+    align-self: flex-start;
+    color: var(--bg-light);
+    font-weight: 600;
+}
+
+.form .submit {
+    padding: 1rem 0.75rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 3rem;
+    background-color: var(--bg-dark);
+    color: var(--bg-light);
+    border: none;
+    cursor: pointer;
+    transition: all 300ms;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.form .submit:hover {
+    background-color: var(--primary);
+    color: #000;
+}
+
+.span {
+    text-decoration: none;
+    color: var(--bg-dark);
+}
+
+.span a {
+    color: var(--primary);
+}
