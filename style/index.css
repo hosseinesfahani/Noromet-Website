@@ -156,7 +156,7 @@
 }
 
 .section {
-    padding: 1rem 2rem 3rem 2rem;
+    padding: 1rem 2rem 1.5rem 2rem;
     background-color: var(--bg-dark);
 }
 
@@ -173,7 +173,7 @@
 
 .card {
     background-color: #1e1f24;
-    padding: 2rem;
+    padding: 1.5rem;
     border-radius: 1rem;
     text-align: center;
     box-shadow: 0 4px 20px rgba(255, 0, 0, 0.1);
@@ -182,12 +182,6 @@
 
 .card:hover {
     transform: translateY(-10px);
-}
-
-.card i {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    color: var(--primary);
 }
 
 .btn-service {
