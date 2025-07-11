@@ -156,7 +156,7 @@
 }
 
 .section {
-    padding: 1rem 2rem 1.5rem 2rem;
+    padding: 1rem 2rem 2rem 2rem;
     background-color: var(--bg-dark);
 }
 
@@ -197,8 +197,9 @@
 }
 
 .partners {
-    padding: 4rem 2rem;
-    background-color: #1e1f24;
+    background: rgba(44, 47, 54, 0.4);
+    backdrop-filter: blur(2px);
+    padding: 1rem 64px 2rem;
     text-align: center;
     color: var(--text-light);
 }
@@ -261,12 +262,91 @@
     border-bottom: 1px solid #444;
 }
 
-footer {
-    background-color: #1a1c22;
-    text-align: center;
-    padding: 1.5rem;
+.footer {
+    background-color: #111;
+    color: var(--text-light);
+    padding: 4rem 2rem 2rem;
+    font-family: var(--font-vn);
+}
+
+.footer-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(256px, 1fr));
+    gap: 4rem;
+    max-width: 1350px;
+    margin: auto;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+.footer-about p {
     font-size: 0.9rem;
     color: var(--text-muted);
+    line-height: 1.7;
+    margin: 0;
+}
+
+.footer-links h4,
+.footer-contact h4 {
+    margin-bottom: 1rem;
+    color: var(--primary);
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links ul li {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links ul li a {
+    color: var(--text-light);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: var(--primary);
+}
+
+.footer-contact p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.footer-contact i {
+    color: var(--primary);
+    margin-left: 0.5rem;
+}
+
+.social-icons a {
+    color: var(--primary);
+    margin-left: 1rem;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #fff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.footer-bottom p {
+    margin: 0;
 }
 
 /* ریسپانسیو */
