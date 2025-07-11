@@ -190,6 +190,18 @@
     color: var(--primary);
 }
 
+.btn-service {
+    background-color: var(--primary); 
+    font-family: inherit;
+    border: none;
+    border-radius: 10px;
+    color: white;
+    padding: 6px 20px;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
 .courses {
     list-style: none;
     padding: 0;

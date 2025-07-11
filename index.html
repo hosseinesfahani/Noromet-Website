@@ -7,6 +7,7 @@
     <title>NoRomant | شرکت امنیت سایبری</title>
     <link rel="stylesheet" href="./style/index.css">
     <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/btn_a.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 
@@ -82,20 +83,20 @@
             </nav>
         </div>
         <div class="container header-left">
-            <button class="icon-btn" title="پروفایل">
+            <a class="icon-btn" title="پروفایل" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" />
                 </svg>
-            </button>
-            <button class="icon-btn" title="سبد خرید">
+            </a>
+            <a class="icon-btn" title="سبد خرید" href="#">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round"
                         d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 0 0-16.536-1.84M7.5 14.25 5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z" />
                 </svg>
-            </button>
+            </a>
         </div>
     </header>
 
@@ -124,7 +125,6 @@
             <div class="stat-item">
                 <div class="stat-content">
                     <div class="icon">
-                        <!-- آیکون: کتاب -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" stroke="#ff0000"
                             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
                             class="lucide lucide-handshake-icon lucide-handshake">
@@ -146,7 +146,6 @@
             <div class="stat-item">
                 <div class="stat-content">
                     <div class="icon">
-                        <!-- آیکون: دوره -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="#ff0000"
                             stroke-width="1.5" viewBox="0 0 24 24">
                             <path d="M12 20v-6m0 0l-3 3m3-3l3 3M5 4h14v2H5zm0 4h14v2H5zm0 4h9v2H5z" />
@@ -162,7 +161,6 @@
             <div class="stat-item">
                 <div class="stat-content">
                     <div class="icon">
-                        <!-- آیکون: کاربر -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="#ff0000"
                             stroke-width="1.5" viewBox="0 0 24 24">
                             <path d="M16 7a4 4 0 1 1-8 0 4 4 0 0 1 8 0Zm-4 7c-4 0-7 2-7 4v2h14v-2c0-2-3-4-7-4Z" />
@@ -178,7 +176,6 @@
             <div class="stat-item">
                 <div class="stat-content">
                     <div class="icon">
-                        <!-- آیکون: ساعت -->
                         <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="#ff0000"
                             stroke-width="1.5" viewBox="0 0 24 24">
                             <circle cx="12" cy="12" r="9" />
@@ -194,16 +191,22 @@
         </div>
     </section>
 
-
-
     <!-- Services -->
     <section id="services" class="section">
-        <h2>خدمات ما</h2>
+        <h2>خدمات نورومنت</h2>
         <div class="grid">
             <div class="card">
                 <i class="fas fa-shield-alt"></i>
-                <h3>تست نفوذ</h3>
-                <p>شناسایی و رفع آسیب‌پذیری‌ها در سیستم‌های شما</p>
+                <h3>خدمات شبکه ای</h3>
+                <h3>
+                    <span style="color: #ff0000;">(</span>
+                    Network Services
+                    <span style="color: #ff0000;">)</span>
+                </h3>
+                <p>تمامی خدمات مرتبط با شبکه از تجهیز تا راه اندازی</p>
+                <button class="btn-bs">
+                    <a class="btn-as" href="#"><span>بیشتر بدانید</span></a> 
+                </button>
             </div>
             <div class="card">
                 <i class="fas fa-user-secret"></i>
