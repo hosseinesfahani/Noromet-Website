@@ -110,7 +110,7 @@ input {
     cursor: pointer;
     transition: all 300ms;
     font-weight: 600;
-    font-size: 0.9rem;
+    font-size: 18px;
 }
 
 .form .submit:hover {
