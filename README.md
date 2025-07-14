@@ -25,11 +25,9 @@ The design is fully **responsive** and adapts beautifully to all screen sizes in
 
 No frameworks. No libraries. 100% handcrafted with love and precision.
 
-## 📸 Screenshots
+## 📸 Website Preview
 
-> Add screenshots to the `screenshots/` folder and link them below:  
-> ![Homepage](./screenshots/homepage.png)  
-> ![Services](./screensshots/services.png)
+> ![Noromet-Web](https://hosseinesfahani.github.io/Noromet-Website/)
 
 ## 📦 Installation
 
