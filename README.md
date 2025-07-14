@@ -27,7 +27,7 @@ No frameworks. No libraries. 100% handcrafted with love and precision.
 
 ## 📸 Website Preview
 
-> ![Noromet-Web](https://hosseinesfahani.github.io/Noromet-Website/)
+![Static Badge](https://img.shields.io/badge/https%3A%2F%2Fhosseinesfahani.github.io%2FNoromet-Website%2F?style=for-the-badge&label=preview&labelColor=ff0000&color=black)
 
 ## 📦 Installation
 
