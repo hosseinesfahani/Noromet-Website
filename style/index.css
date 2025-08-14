@@ -43,6 +43,40 @@
     color: var(--primary);
 }
 
+.hero-buttons {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.hero-buttons .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    background: var(--primary);
+    color: #000;
+    transition: 0.5s;
+}
+
+.hero-buttons .btn:hover {
+    background: #990000;
+}
+
+.hero-buttons .btn-outline {
+    background: transparent;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.hero-buttons .btn-outline:hover {
+    background: var(--primary);
+    color: #000;
+}
+
 .stats {
     background-color: #0f0f0f;
     padding: 3rem 0rem;
@@ -266,5 +300,10 @@
 @media (max-width: 768px) {
     .stats-container {
         gap: 1rem;
+    }
+        
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
     }
 }
