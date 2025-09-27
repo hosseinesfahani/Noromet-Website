@@ -7,7 +7,7 @@ Welcome to the official repository of **Noroment**, a modern, minimalistic, hack
 
 This project represents the frontend of Noroment's official website. It includes the following key sections:
 
-- 🔐 Hero section with company tagline  
+- 🔐 Hero section with company tagline !
 - 🛠 Services overview  
 - 🤝 Collaborations & Partnerships  
 - 📚 Best-selling courses  
