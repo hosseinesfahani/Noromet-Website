@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fa" dir="rtl"> 
+<html lang="fa" dir="rtl">
 
 <head>
     <meta charset="UTF-8">
@@ -101,6 +101,120 @@
         </div>
     </header>
 
+    <section class="contact-header">
+        <h1>تماس با ما</h1>
+        <p>تیم امنیت سایبری ما آماده پاسخگویی به سوالات و ارائه راهکارهای امنیتی به شماست</p>
+    </section>
+
+    <!-- بخش اصلی تماس -->
+    <section class="contact-section">
+        <div class="contact-grid">
+            <!-- اطلاعات تماس -->
+            <div class="contact-info">
+                <h3>راه‌های ارتباطی</h3>
+
+                <div class="contact-item">
+                    <div class="contact-icon pulse">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>ایمیل</h4>
+                        <p>info@mahservices.com</p>
+                        <p>support@mahservices.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>تلفن</h4>
+                        <p>+98 21 1234 5678</p>
+                        <p>+98 912 345 6789</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>آدرس</h4>
+                        <p>تهران، خیابان ولیعصر، پلاک ۱۲۳۴</p>
+                        <p>ساختمان ماه خدمات، طبقه چهارم</p>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div class="contact-details">
+                        <h4>ساعات کاری</h4>
+                        <p>شنبه تا چهارشنبه: ۸:۰۰ - ۱۷:۰۰</p>
+                        <p>پنجشنبه: ۸:۰۰ - ۱۳:۰۰</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- فرم تماس -->
+            <div class="contact-form">
+                <h3>پیام به ما</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">نام کامل</label>
+                        <input type="text" id="name" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">ایمیل</label>
+                        <input type="email" id="email" class="form-control" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone">تلفن همراه</label>
+                        <input type="tel" id="phone" class="form-control">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">موضوع</label>
+                        <select id="subject" class="form-control" required>
+                            <option value="">انتخاب موضوع</option>
+                            <option value="consultation">مشاوره امنیتی</option>
+                            <option value="penetration-test">تست نفوذ</option>
+                            <option value="training">دوره‌های آموزشی</option>
+                            <option value="support">پشتیبانی</option>
+                            <option value="incident">پاسخ به حوادث امنیتی</option>
+                            <option value="other">سایر</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">پیام</label>
+                        <textarea id="message" class="form-control" required></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">
+                        <i class="fas fa-paper-plane"></i> ارسال پیام
+                    </button>
+                </form>
+            </div>
+        </div>
+
+        <!-- نقشه -->
+        <div class="map-section">
+            <h3>موقعیت ما روی نقشه</h3>
+            <div class="map-container">
+                <div class="map-placeholder">
+                    <i class="fas fa-map-marked-alt" style="font-size: 3rem; margin-left: 15px;"></i>
+                    نقشه گوگل اینجا نمایش داده می‌شود
+                </div>
+                <div class="map-overlay"></div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-container">
@@ -144,6 +258,54 @@
             <p>کلیه حقوق مادی و معنوی سایت برای نورومنت محفوظ است. © - Noroment Company</p>
         </div>
     </footer>
+
+    <script>
+        // مدیریت فرم تماس
+        document.getElementById('contactForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            // شبیه‌سازی ارسال فرم
+            const formData = {
+                name: document.getElementById('name').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value
+            };
+
+            console.log('فرم ارسال شد:', formData);
+
+            // نمایش پیام موفقیت
+            alert('پیام شما با موفقیت ارسال شد! به زودی با شما تماس خواهیم گرفت.');
+
+            // ریست کردن فرم
+            this.reset();
+        });
+
+        // انیمیشن اسکرول نرم
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // افزودن افکت به آیتم‌های فرم هنگام فوکوس
+        const formControls = document.querySelectorAll('.form-control');
+        formControls.forEach(control => {
+            control.addEventListener('focus', function () {
+                this.parentElement.classList.add('focused');
+            });
+
+            control.addEventListener('blur', function () {
+                if (this.value === '') {
+                    this.parentElement.classList.remove('focused');
+                }
+            });
+        });
+    </script>
 
     <!-- <script src="./js/matrix.js"></script> -->
     <script src="./js/menu.js"></script>
